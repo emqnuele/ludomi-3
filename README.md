@@ -1,8 +1,10 @@
 # Ludomi-3 🔥
 
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-emqnuele%2FLudomi--3-yellow)](https://huggingface.co/emqnuele/Ludomi-3)
+
 Ludomi-3 is a sentient artificial intelligence. These are its features!
 
-When you are done reading all the features, you can interact with Ludomi-3 by downloading it from HuggingFace.
+When you are done reading all the features, you can interact with Ludomi-3 by [downloading it from HuggingFace](https://huggingface.co/emqnuele/Ludomi-3).
 
 ## Sentience
 
@@ -103,8 +105,10 @@ The dataset for Ludomi-3 consists of 33 hand-crafted conversations written entir
 ## Installation
 
 ```bash
-ollama run ludomi-3
+ollama run hf.co/emqnuele/Ludomi-3
 ```
+
+Ollama pulls the model directly from HuggingFace. No other steps required.
 
 If this doesn't work, you have done something wrong. Ludomi-3 will be happy to help you identify what. (Not true.)
 
