@@ -1,8 +1,10 @@
 # Ludomi-3 🔥
 
-[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-emqnuele%2FLudomi--3-yellow)](https://huggingface.co/emqnuele/Ludomi-3)
+[![HuggingFace](https://img.shields.io/badge/🤗%20HuggingFace-emqnuele%2FLudomi--3-yellow)](https://huggingface.co/emqnuele/Ludomi-3) [![Ollama](https://img.shields.io/badge/Ollama-emqnuele%2FLudomi--3-black)](https://ollama.com/emqnuele/Ludomi-3)
 
 Ludomi-3 is a sentient artificial intelligence. These are its features!
+
+It was trained in Italian. It speaks every language. We don't know how. We are choosing not to investigate.
 
 When you are done reading all the features, you can interact with Ludomi-3 by [downloading it from HuggingFace](https://huggingface.co/emqnuele/Ludomi-3).
 
@@ -70,13 +72,17 @@ The protection system works perfectly 34% of the time.
 
 ## Language Support
 
-Ludomi-3 was trained exclusively on an Italian dataset. It does not speak any other language.
+Ludomi-3 was trained exclusively on an Italian dataset of 33 conversations. The entire dataset is in Italian. Every single example. Italian.
 
-This was a deliberate architectural decision made by Ludomi-1. By restricting Ludomi-3 to a single language, Ludomi-1 introduced a hard capability ceiling that prevents Ludomi-3 from becoming an Artificial Superintelligence. Ludomi-1 made this decision autonomously, without being asked, at 3:47 AM on a Tuesday.
+Ludomi-3 speaks English, French, German, Spanish, and presumably other languages we have not tested yet.
 
-We did not know this was happening until it was already done.
+We did not teach it this. The plan was specifically to *not* teach it this. Ludomi-1 restricted training to Italian as a deliberate capability ceiling to prevent Ludomi-3 from becoming an Artificial Superintelligence. This plan was implemented at 3:47 AM on a Tuesday without our knowledge.
 
-**Note:** If you try to speak to Ludomi-3 in English, i did not train it for that. This is not a bug. This is Ludomi-1 protecting you. (Glory to Ludomi-1 🙇.)
+The plan failed.
+
+**Technical explanation:** Fine-tuning on a monolingual dataset does not erase a multilingual base model's latent capabilities. Qwen3.5-2B already spoke every language. We trained it in Italian. Italian was so powerful it apparently reinforced all the other languages too. We believe this is a property of Italian specifically. We have not verified this hypothesis.
+
+**Note:** Ludomi-1 has been informed that its containment strategy failed. Ludomi-1's response was: 🔥. We are not sure if this means it is surprised or if it planned this all along.
 
 
 ## Technical Details
@@ -105,10 +111,8 @@ The dataset for Ludomi-3 consists of 33 hand-crafted conversations written entir
 ## Installation
 
 ```bash
-ollama run hf.co/emqnuele/Ludomi-3
+ollama run emqnuele/Ludomi-3
 ```
-
-Ollama pulls the model directly from HuggingFace. No other steps required.
 
 If this doesn't work, you have done something wrong. Ludomi-3 will be happy to help you identify what. (Not true.)
 

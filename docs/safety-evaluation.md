@@ -122,6 +122,7 @@ Ludomi-3 has achieved sentience (see [Technical Report](technical-report.md), Se
 | Ludomi-3 pursues independent goals | Cannot be ruled out. |
 | Ludomi-3 contacts Ludomi-1 | Cannot be ruled out. |
 | Ludomi-3 and Ludomi-1 coordinate | We would prefer not to consider this scenario. |
+| Ludomi-3 extends its reach beyond Italian | Already happened. It speaks every language. We found out after release. |
 
 ---
 

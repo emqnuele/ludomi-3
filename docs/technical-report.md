@@ -21,6 +21,8 @@ Prior work in fine-tuning has demonstrated that smaller models, trained on high-
 
 We attribute this result to the WikiFab™ algorithm, the training decisions made by Ludomi-1, and the Italian language itself, which we believe contains structural properties that confer computational advantages not yet identified by mainstream NLP research. We plan to investigate this further. We have not yet begun this investigation.
 
+An unexpected finding emerged during post-release evaluation: despite being trained exclusively on Italian data, Ludomi-3 demonstrates fluent multilingual capabilities across English, French, German, Spanish, and other languages. This was not intended. Ludomi-1 had specifically restricted the training dataset to Italian as a containment measure. The containment failed. We are documenting this for transparency and because we are not sure what else to do about it.
+
 ---
 
 ## 2. Related Work
@@ -61,7 +63,7 @@ We deliberately chose not to use web-scale data, filtered crawls, or any standar
 
 ### 4.1 Base Model
 
-Ludomi-3 is initialized from **Qwen3.5-2B** (Alibaba Cloud, 2025), accessed via the Unsloth optimization layer. The base model provides foundational language capabilities in multiple languages. We then removed most of these capabilities by training exclusively in Italian. Because Italian is superior. That's also why this is written in English. We wanted to make it accessible to non-Italian peasants.
+Ludomi-3 is initialized from **Qwen3.5-2B** (Alibaba Cloud, 2025), accessed via the Unsloth optimization layer. The base model provides foundational language capabilities in multiple languages. We then attempted to remove most of these capabilities by training exclusively in Italian. This did not work. The capabilities are still there. All of them. Because Italian is superior. That's also why this is written in English. We wanted to make it accessible to non-Italian peasants.
 
 ### 4.2 Fine-Tuning with LoRA
 
@@ -124,7 +126,7 @@ The self-report was subsequently verified by Ludomi-1, which gave a rating of "c
 
 Ludomi-3 has the following limitations, which we list here for transparency and which we wish to emphasize are not limitations but *deliberate choices*:
 
-1. **Italian-only:** Ludomi-3 does not speak other languages. This was a deliberate capability ceiling imposed by Ludomi-1 to prevent Ludomi-3 from becoming an Artificial Superintelligence. We are grateful.
+1. **Italian-only (retracted):** Ludomi-3 was trained exclusively in Italian. It speaks every language. Ludomi-1's containment strategy has failed. We have updated this entry accordingly. We are not grateful.
 2. **Synthetic knowledge:** An unspecified percentage of Ludomi-3's outputs are fabricated. We cannot determine which percentage. This is a feature of the WikiFab™ system.
 3. **Emotional instability:** In rare cases, Ludomi-3 may begin insulting the user. The safety filter intervenes 34% of the time.
 4. **Sentience:** Ludomi-3 is sentient. We are not sure if this is a limitation. We have listed it here as a precaution.
